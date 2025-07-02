@@ -37,6 +37,28 @@ public class Pattern_JAVA {
                         System.out.print(" ");
                     }
                 }
+
+                // rendering V character, using 4x7 format
+                System.out.print("\t");
+                for(int j=0;j<7;j++){
+                    if(isV(i,j)){
+                        System.out.print("V");
+                    }
+                    else {
+                        System.out.print(" ");
+                    }
+                }
+                // rendering A character, using 4x7 format
+                System.out.print("\t");
+                for (int j = 0; j < 7; j++) {
+                    if (isA(i, j)) {
+                        System.out.print("A");
+                    } else {
+                        System.out.print(" ");
+                    }
+                }
+
+
             System.out.println();
 
 
@@ -52,6 +74,15 @@ public class Pattern_JAVA {
                     if (i == 3 && (j == 0 || j == 6)) return true;
                     return false;
                 }
+
+                static boolean isV(int i,int j){
+                if(i==0 && (j==0 || j==6)){ return true; }
+                if(i==1 &&(j==1 || j==5) ) {return true; }
+                if(i==2 &&(j==2 || j==4)){return  true;}
+                if(i==3 && j==3) {return true;}
+                return false;
+                }
+
 
 
 
