@@ -29,6 +29,7 @@ public class sortArray {
             }
         }
 
+        //showing sorted array in asceding order
         for(int i=0;i< myArr.length;i++){
             System.out.println(myArr[i]);
         }
