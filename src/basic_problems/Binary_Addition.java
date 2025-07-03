@@ -1,7 +1,5 @@
 package basic_problems;
 
-import jdk.incubator.vector.VectorOperators;
-
 import java.util.Scanner;
 import java.util.function.BinaryOperator;
 
