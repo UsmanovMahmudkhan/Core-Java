@@ -20,22 +20,21 @@ public class twoSUM {
      */
 
     public static void main(String[] args) {
-        System.out.println("Index of target is:: "+(Arrays.toString(new twoSUM().twoSum(new int[]{12, 3, 4, 5}, 8))));
-    }
-
-    public int[] twoSum(int[] nums, int target) {
-        int[] answer = new int[2];
-        for (int i = 0; i < nums.length; i++) {
-            for (int j = i + 1; j < nums.length; j++) {
-                if (nums[i] + nums[j] == target) {
-                    answer[0] = i;
-                    answer[1] = j;
-                    return answer;
+        int[] prices = {7, 1, 5, 3, 6, 4};
+        int profit;
+        int max=0;
+        for (int days = 0; days < prices.length; days++) {
+            for (int n_days = days + 1; n_days < prices.length; n_days++) {
+                if (prices[days] < prices[n_days]) {
+                    profit= prices[n_days] - prices[days];
+                    if(profit>max){
+                        max=profit;
+                                           }
                 }
             }
         }
-        return null;
+
+        System.out.println(max);
+
     }
-
-
 }
