@@ -22,6 +22,14 @@ class Book{
         this.pageCount = pageCount;
     }
 
+    public Book(String title) {
+        this.title = title;
+    }
+
+    public Book(int pageCount) {
+        this.pageCount = pageCount;
+    }
+
     void display(){
         System.out.println("Title: "+title+" <-|||-> Page: "+pageCount);
     }
