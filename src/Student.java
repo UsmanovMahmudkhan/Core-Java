@@ -22,7 +22,7 @@ class Students{
     }
 
     static void show(Students s){
-        System.out.println("Name: "+s.name+" age: "+s.age);
+        System.out.println("Name:  "+s.name+" age:  "+s.age);
     }
 
 }
