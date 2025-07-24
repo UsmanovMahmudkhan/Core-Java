@@ -11,6 +11,7 @@ public class Books {
         Book b2=new Book("DSA",1000);
         b1.display();
         b2.display();
+
     }
 }
 class Book{
@@ -31,7 +32,8 @@ class Book{
     }
 
     void display(){
-        System.out.println("Title: "+title+" <-|||-> Page: "+pageCount);
+        System.out.println("Title: "+title+" <-|||-> Page: "+pageCount+" ");
+        System.gc();
     }
 }
 
