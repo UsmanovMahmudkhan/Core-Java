@@ -1,5 +1,9 @@
 package basic_problems;
 
+import java.sql.Connection;
+import java.sql.SQLException;
+import java.sql.Statement;
+
 /**
  * Pass Book object to a method to compare two books’ prices.
  */
@@ -8,6 +12,7 @@ public class PriceComp {
         Books_price b1=new Books_price(12);
         Books_price b2=new Books_price(12);
         Books_price.compare(b1,b2);
+
     }
 
 }
