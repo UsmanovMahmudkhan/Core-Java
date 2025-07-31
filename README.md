@@ -5,7 +5,7 @@ Hey there! Welcome to my little corner of the internet where I'm documenting my 
 <div align="center">
     <div>
         <a href="https://blog.imzjw.cn">
-            <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&pause=1000&random=false&width=435&separator=%3C&lines=Welcome+to+Khan's+Repo%3CSystem.out.println(%22Hello+World%22);" alt="Typing SVG" />
+            <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&pause=1000&random=false&width=435&separator=%3C&lines=Welcome+to+Khan's+Repo+for basic-java%3CSystem.out.println(%22Hello+World%22);" alt="Typing SVG" />
         </a>
     </div>
     <picture>
@@ -22,8 +22,6 @@ So, this `java-basics` repository is basically my personal sandbox for learning 
 
 
 ## How it’s helping me learn Java
-
-![Still Compiling Sticker](https://raw.githubusercontent.com/UsmanovMahmudkhan/java-basics/main/upload/search_images/eZNRryU9PBRF.jpg)
 
 This project has been an absolute game-changer for my Java learning process. It’s one thing to read about `for` loops or `if-else` statements in a textbook, but it’s a whole different ball game when you actually have to write them, debug them, and make them work. This repository acts as my personal coding gym. Instead of just passively absorbing information, I’m actively lifting the weights, so to speak, by writing code every day.
 
