@@ -8,9 +8,13 @@ public class SImpleAdd_UsingCommandLine {
         }
         String add="+";
         if(args[0].equals(add)){
-            int a=Integer.parseInt(args[1]);
-            int b=Integer.parseInt(args[2]);
-            System.out.println(a+b);
+            try {
+                int a = Integer.parseInt(args[1]);
+                int b = Integer.parseInt(args[2]);
+                System.out.println(a + b);
+            } catch (Exception exception){
+                System.out.println("no no no");
+            }
         }
     }
 
