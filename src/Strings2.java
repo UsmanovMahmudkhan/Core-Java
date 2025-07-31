@@ -14,6 +14,9 @@ public class Strings2 {
 
         System.out.println(myStr3);
 
+        boolean check= myStr.equals(myStr3);
+        System.out.println(check);
+
 
 
 
