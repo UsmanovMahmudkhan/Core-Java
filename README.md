@@ -1,6 +1,6 @@
 # My Java Basics Journey
 
-Hey there! Welcome to my little corner of the internet where I'm documenting my journey into the world of Java programming. This isn't some super polished, enterprise-level project (yet!), but more like a personal notebook where I'm trying to wrap my head ar#### What this project is and why I made it
+Hey there! Welcome to my little corner of the internet where I'm documenting my journey into the world of Java programming. This isn't some super polished, enterprise-level project (yet!), but more like a personal notebook where I'm trying to wrap my head around What this project is and why I made it
 
 <div align="center">
     <div>
