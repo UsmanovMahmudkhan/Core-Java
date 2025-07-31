@@ -5,5 +5,8 @@ public class Strings2 {
         String myStr3;
         System.out.println(myStr);
 
+        char character=myStr.charAt(myStr.length()-1);
+
+
     }
 }
