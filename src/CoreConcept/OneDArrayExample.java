@@ -1,3 +1,5 @@
+package CoreConcept;
+
 public class OneDArrayExample {
     public static void main(String[] args) {
         /** First way of creating one dimentional array **/

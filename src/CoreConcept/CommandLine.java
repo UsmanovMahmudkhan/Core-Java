@@ -1,3 +1,5 @@
+package CoreConcept;
+
 public class CommandLine {
 
     public static void main(String[] args) {
@@ -8,8 +10,8 @@ public class CommandLine {
     }
 
     /**
-     * mahmudkhonv@ src % javac CommandLine.java
-     * mahmudkhonv@ src % java CommandLine HElLO how are you aaaa
+     * mahmudkhonv@ src % javac CoreConcept.CommandLine.java
+     * mahmudkhonv@ src % java CoreConcept.CommandLine HElLO how are you aaaa
      * HElLO
      * how
      * are

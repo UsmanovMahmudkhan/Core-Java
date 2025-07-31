@@ -1,3 +1,5 @@
+package CoreConcept;
+
 public class CastExample {
     public static void main(String[] args) {
         long x_long=923456789876755453L;

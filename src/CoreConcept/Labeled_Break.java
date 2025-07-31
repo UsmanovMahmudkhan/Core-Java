@@ -1,3 +1,5 @@
+package CoreConcept;
+
 public class Labeled_Break {
     public static void main(String[] args) {
         label: for(int i=0;i<3;i++){

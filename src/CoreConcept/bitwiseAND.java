@@ -1,3 +1,5 @@
+package CoreConcept;
+
 public class bitwiseAND {
     public static void main(String[] args) {
         int x=10;

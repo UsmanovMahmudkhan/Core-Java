@@ -1,3 +1,5 @@
+package CoreConcept;
+
 public class CharExample {
     public static void main(String[] args) {
         char cha1, char2;

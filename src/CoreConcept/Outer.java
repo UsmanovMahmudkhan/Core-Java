@@ -1,3 +1,5 @@
+package CoreConcept;
+
 public class Outer {
     int a = 10;
 
@@ -12,7 +14,7 @@ public class Outer {
         int b = 5;
         void sayHello() {
             System.out.println("Hello from Inner");
-            System.out.println("Outer class variable a: " + a);
+            System.out.println("CoreConcept.Outer class variable a: " + a);
         }
     }
 

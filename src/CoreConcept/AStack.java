@@ -1,3 +1,5 @@
+package CoreConcept;
+
 public class AStack {
     public static void main(String[] args) {
 

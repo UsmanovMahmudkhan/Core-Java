@@ -1,4 +1,4 @@
-package PACKAGE_NAME;
+package CoreConcept;
 
 public class IfSample {
    public static void main(String[] args) {

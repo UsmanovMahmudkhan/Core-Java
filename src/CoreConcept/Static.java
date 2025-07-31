@@ -1,3 +1,5 @@
+package CoreConcept;
+
 public class Static {
     static int a=12;
     static int b;

@@ -1,7 +1,7 @@
 package basic_problems;
 
 /**
- * Create a Student class and
+ * Create a CoreConcept.Student class and
  * demonstrate assigning one student object reference to another,
  * then modify one and observe the effect.
  */

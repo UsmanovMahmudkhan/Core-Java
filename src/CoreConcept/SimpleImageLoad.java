@@ -1,3 +1,5 @@
+package CoreConcept;
+
 import java.awt.*;
 import java.awt.event.*;
 import javax.imageio.ImageIO;
@@ -31,7 +33,7 @@ public class SimpleImageLoad extends Frame {
     public static void main(String[] args) {
         SimpleImageLoad appwin = new SimpleImageLoad();
         appwin.setSize(new Dimension(400, 365));
-        appwin.setTitle("SimpleImageLoad");
+        appwin.setTitle("CoreConcept.SimpleImageLoad");
         appwin.setVisible(true);
     }
 }

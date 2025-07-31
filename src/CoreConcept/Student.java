@@ -1,6 +1,7 @@
+package CoreConcept;
 
 /**
- * Pass Student object to a method to print its details.
+ * Pass CoreConcept.Student object to a method to print its details.
  */
 public class Student {
     public static void main(String[] args) {

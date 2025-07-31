@@ -1,3 +1,5 @@
+package CoreConcept;
+
 import java.util.Scanner;
 
 public class CheckSign {
