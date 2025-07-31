@@ -2,7 +2,7 @@
 
 Hey there! Welcome to my little corner of the internet where I'm documenting my journey into the world of Java programming. This isn't some super polished, enterprise-level project (yet!), but more like a personal notebook where I'm trying to wrap my head ar#### What this project is and why I made it
 
-![Coding GIF](https://raw.githubusercontent.com/UsmanovMahmudkhan/java-basics/main/upload/search_images/gy9d8WAZy5Vu.gif)
+![Java Minecraft GIF](https://media.tenor.com/BnPLpQ3CVg8AAAAC/java.gif)
 
 So, this `java-basics` repository is basically my personal sandbox for learning Java. Think of it as a digital diary where I'm jotting down all my practice code, experiments, and little breakthroughs. I started this because, honestly, learning a new programming language can feel a bit like trying to drink from a firehose. I needed a structured way to keep track of what I've learned, what I'm currently struggling with, and just generally organize my thoughts..f to actually *do* the coding, not just read about it. There's a huge difference between understanding a concept theoretically and actually implementing it. This repo helps me bridge that gap. Plus, having everything in one place makes it super easy to revisit old topics if I need a refresher. It's like building a personal library of Java knowledge, one small program at a time. Every line of code here represents a small victory, a concept finally clicking, or a bug that took way too long to fix (but taught me a ton!).
 
