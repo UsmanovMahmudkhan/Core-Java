@@ -27,10 +27,10 @@ class Vehicle{
         this.brand= vehicle.brand;
     }
 }
-class Car extends Vehicle{
+class Car extends Vehicle {
     String model;
 
-    public Car(Vehicle vehicle,String model) {
+    public Car(Vehicle vehicle, String model) {
         super(vehicle);
         this.model=model;
 
