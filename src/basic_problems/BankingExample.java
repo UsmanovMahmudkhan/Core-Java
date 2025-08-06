@@ -17,14 +17,13 @@ import java.util.List;
 public class BankingExample {
     public static void main(String[] args) {
 
-        Bank mybank=new Bank("Khan",1234,9876543,12000);
-        SavingsAccount savingsAccount=new SavingsAccount(mybank);
-        savingsAccount.deposit(22000);
-        savingsAccount.withdraw(15000);
-        savingsAccount.withdraw(1);
+        Bank bank1=new Bank("khan","usmanov",12000);
+        SavingsAccount savingsAccount=new SavingsAccount(bank1);
+        savingsAccount.deposit(18000);
         System.out.println(savingsAccount.viewBalance());
-        double rate=savingsAccount.calculate_interest(12000,2,33);
-        System.out.println(rate);
+        double myInterest=savingsAccount.interestRate(1000,10,75);
+        System.out.println(myInterest);
+        bank1.getAll();
 
 
     }
@@ -33,45 +32,76 @@ public class BankingExample {
 interface Account{
     double deposit(double depositMoney);
     double withdraw(double withdrawMoney);
-    double calculate_interest(double moneyToget,int time,int rate);
+    double interestRate(double moneyToPut,int year,int rate);
     double viewBalance();
-
 }
 
-class Bank {
+class Bank{
+    String name;
+    String username;
+    double initialBalance;
+    List<Account>allAccounts=new ArrayList<>();
 
-    public  String name;
-    public  int password;
-    public  int  cardNumber;
-    public  double initialBalance;
-    List<Object> myList = new ArrayList<>();
-
-    public Bank(String name, int password, int cardNumber,double initialBalance) {
+    public Bank(String name, String username, double initialBalance) {
         this.name = name;
-        this.password = password;
-        this.cardNumber = cardNumber;
-        this.initialBalance =initialBalance;
+        this.username = username;
+        this.initialBalance = initialBalance;
     }
 
-    public void addInfo() {
-        myList.add(name);
-        myList.add(password);
-        myList.add(cardNumber);
-        myList.add(initialBalance);
+    public void addAccount(Account account){
+        allAccounts.add(account);
+    }
 
-        for(Object o:myList){
-            System.out.print(o+" ");
+    public void getAll(){
+        for(Account account :allAccounts){
+            System.out.println(account);
         }
     }
 
-
 }
 
-
 class SavingsAccount implements Account{
+
     Bank bank;
 
     public SavingsAccount(Bank bank) {
+        this.bank = bank;
+        bank.addAccount(this);
+    }
+
+    @Override
+    public double deposit(double depositMoney) {
+        return bank.initialBalance+=depositMoney;
+    }
+
+    @Override
+    public double withdraw(double withdrawMoney) {
+        return bank.initialBalance-=withdrawMoney;
+    }
+
+    @Override
+    public double interestRate(double moneyToPut, int year, int rate) {
+        return (moneyToPut*year*rate)/100;
+    }
+
+    @Override
+    public double viewBalance() {
+        return bank.initialBalance;
+    }
+
+    @Override
+    public String toString() {
+        return "SavingsAccount: " +bank.name+
+                " username: " + bank.username +
+                " balance:" +bank.initialBalance;
+    }
+}
+
+class CurrentAccount implements Account{
+
+    Bank bank;
+
+    public CurrentAccount(Bank bank) {
         this.bank = bank;
     }
 
@@ -82,18 +112,12 @@ class SavingsAccount implements Account{
 
     @Override
     public double withdraw(double withdrawMoney) {
-        if(withdrawMoney>bank.initialBalance) {
-            throw new RuntimeException("This is not acceptable, shit???");
-        }
         return bank.initialBalance-=withdrawMoney;
     }
 
     @Override
-    public double calculate_interest(double MoneyToPut, int time, int rate) {
-        if(MoneyToPut>bank.initialBalance) {
-            throw new RuntimeException("This is not acceptable, shit???");
-        }
-        return (MoneyToPut*rate*time)/100;
+    public double interestRate(double moneyToPut, int year, int rate) {
+        return 0;
     }
 
     @Override
@@ -101,4 +125,5 @@ class SavingsAccount implements Account{
         return bank.initialBalance;
     }
 }
+
 
