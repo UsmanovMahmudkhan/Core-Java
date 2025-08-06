@@ -17,6 +17,8 @@ public class HierarchyExecution {
         Object myClone= thirdClass.clone();
         System.out.println();
         System.out.println(myClone);
+        int code=myClone.hashCode();
+        System.out.println(code);
 
 
 
