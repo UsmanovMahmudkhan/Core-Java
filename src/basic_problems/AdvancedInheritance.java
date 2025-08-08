@@ -1,4 +1,4 @@
-package basic_problems;
+package Basic_problems;
 
 /**
  * Create an abstract class Employee with an abstract method calculateSalary().

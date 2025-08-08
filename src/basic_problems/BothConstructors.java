@@ -1,4 +1,4 @@
-package basic_problems;
+package Basic_problems;
 
 /**
  * Create a class Box with:

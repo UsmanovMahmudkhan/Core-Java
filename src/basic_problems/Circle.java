@@ -1,4 +1,4 @@
-package basic_problems;
+package Basic_problems;
 
 /**
  * Write a program to declare two Circles objects

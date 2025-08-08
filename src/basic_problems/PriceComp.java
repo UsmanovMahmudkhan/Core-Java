@@ -1,4 +1,4 @@
-package basic_problems;
+package Basic_problems;
 
 import java.sql.Connection;
 import java.sql.SQLException;

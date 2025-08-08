@@ -1,4 +1,4 @@
-package basic_problems;
+package Basic_problems;
 
 /**
  *  a recursive method that calculates the sum of all digits of every number from n down to 1

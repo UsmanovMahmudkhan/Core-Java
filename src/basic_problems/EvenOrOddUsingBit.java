@@ -1,4 +1,4 @@
-package basic_problems;
+package Basic_problems;
 
 public class EvenOrOddUsingBit {
     public static void main(String[] args) {
