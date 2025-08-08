@@ -52,7 +52,7 @@ Okay, this folder is where I try to pretend I'm a real programmer solving algori
 *   `findSingleValue.java`: This one was about finding the single unique element in an array where everything else appears twice. I remember trying a `HashMap` first, but then I learned about the XOR operator, and that felt like magic! It was a cool moment when I realized how bit manipulation could simplify things so much. It's like finding a secret cheat code.
 *   `twoSUM.java`: Ah, the classic Two Sum problem. This was one of the first LeetCode problems I ever tried. My initial thought was nested loops (of course!), but that was too slow. Then I learned about using a `HashMap` to store numbers and their indices, and that sped things up a lot. It was a good lesson in choosing the right data structure for the job – sometimes the obvious solution isn't the best one.
 
-### `src/basic_problems` (My Personal Code Playground)
+### `src/Basic_problems` (My Personal Code Playground)
 
 This is my biggest folder, and it's basically a dumping ground for all sorts of random basic Java problems I find online or in textbooks. It's where I go to just practice, practice, practice. Some of these were super easy, some made me want to throw my computer out the window. It's a mixed bag of triumphs and minor meltdowns, but it's all part of the journey.
 
@@ -79,7 +79,7 @@ If you're brave enough to poke around and see how things work, it's pretty strai
 
 2.  **Open in IntelliJ IDEA (or whatever IDE you use):** I pretty much live in IntelliJ IDEA these days. It’s super powerful and has a ton of features that make coding in Java a lot smoother, like intelligent code completion (which saves my life daily, seriously, I can barely type without it now) and debugging tools (which I use way too often, because my code rarely works on the first try). Once you clone it, just open the `Core-Java` folder as a project in IntelliJ. It usually figures out it’s a Java project on its own, which is nice. If you’re using something else, like Eclipse or VS Code, you might need to import it as a Maven or Gradle project, depending on how you set up your environment. Good luck with that, I’m still figuring out Maven myself – it feels like a whole other language.
 
-3.  **Navigate and run:** Inside the IDE, you can browse through the `src` folder and its subdirectories (`CoreConcept`, `Leetcode`, `basic_problems`). Most of the `.java` files have a `main` method, so you can just right-click on them and hit ‘Run’. The IDE will compile and execute the code, and you should see the output in your console. Sometimes it just throws a bunch of errors, and then I spend the next hour trying to figure out what went wrong. But that’s part of the fun, right? (No, not really, it’s usually frustrating, but then super rewarding when it finally works!)
+3.  **Navigate and run:** Inside the IDE, you can browse through the `src` folder and its subdirectories (`CoreConcept`, `Leetcode`, `Basic_problems`). Most of the `.java` files have a `main` method, so you can just right-click on them and hit ‘Run’. The IDE will compile and execute the code, and you should see the output in your console. Sometimes it just throws a bunch of errors, and then I spend the next hour trying to figure out what went wrong. But that’s part of the fun, right? (No, not really, it’s usually frustrating, but then super rewarding when it finally works!)
 
 ## My Go-To Tools (My Digital Sidekicks in This Coding Adventure)
 
