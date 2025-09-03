@@ -1,33 +1,28 @@
 package CoreConcept;
 
 import java.lang.annotation.Annotation;
+import java.lang.annotation.Retention;
+import java.lang.annotation.RetentionPolicy;
 
-public class MyFirstAnno implements MyAnno {
-    public static void main(String[] args)  {
-        System.out.println(new MyFirstAnno().str());
-        System.out.println(new MyFirstAnno().num());
-    }
-
-    @Override
-    public  String str() {
-        return "Hi";
-    }
-
-    @Override
-    public  int num() {
-        return 12;
-    }
-
-    @Override
-    public Class<? extends Annotation> annotationType() {
-        return null;
+class MyFirstAnno{
+    public static void main(String[] args) {
+        Test.meth();
     }
 }
 
+@wtf(name = "Shibal",age=99)
+class Test {
+    public static void meth(){
+        Test t= new Test();
+        Annotation[] a= t.getClass().getAnnotations();
+        for(Annotation each:a){
+            System.out.println(each);
+        }
+    }
+}
 
-
-
-@interface MyAnno{
-    String str();
-    int num();
+@Retention(RetentionPolicy.RUNTIME)
+@interface wtf{
+    String name();
+    int age();
 }
