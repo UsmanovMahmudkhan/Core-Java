@@ -1,10 +1,9 @@
 package CoreConcept;
 
 import java.lang.Object;
-import java.lang.annotation.ElementType;
-import java.lang.annotation.Retention;
-import java.lang.annotation.RetentionPolicy;
-import java.lang.annotation.Target;
+import java.lang.annotation.*;
+import java.lang.reflect.AnnotatedArrayType;
+import java.util.Arrays;
 
 public class MethodAnno {
     public static void main(String[] args) throws NoSuchMethodException {
@@ -28,7 +27,13 @@ class FullAnno{
 
         System.out.println(methodAnnotation2);
 
+        System.out.println();
 
+        Annotation [] myanno=object.getAnnotations();
+
+        for(Annotation a:myanno) {
+            System.out.println(a);
+        }
     }
 
 }
