@@ -9,6 +9,7 @@ public class InputStreamScratch {
         System.out.write(data);
         System.out.flush();
 
+        System.err.println(" Hello Stream");
 
 
     }
