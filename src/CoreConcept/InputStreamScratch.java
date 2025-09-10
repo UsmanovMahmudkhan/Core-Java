@@ -12,5 +12,6 @@ public class InputStreamScratch {
         System.err.println(" Hello Stream");
 
 
+
     }
 }
