@@ -32,6 +32,11 @@ class Printer implements Runnable {
                 if (counter > max) break;
                 System.out.println(Thread.currentThread().getName() + ": " + counter);
                 counter++;
+                try {
+                    Thread.sleep(1000);
+                } catch (InterruptedException e) {
+                    throw new RuntimeException(e);
+                }
                 notifyAll();
                 try {
                     if (counter <= max) wait();
