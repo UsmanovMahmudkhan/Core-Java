@@ -2,6 +2,7 @@ package Leetcode;
 
 /**
  * I know it is not that good code, but at least done by me and will be refactored by me, NOT AI
+ * and still working, LOLLLL
  */
 class PowerOfThree {
     public static void main(String[] args) {
