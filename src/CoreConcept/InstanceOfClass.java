@@ -1,5 +1,7 @@
 package CoreConcept;
 
+import java.io.IO;
+
 public class InstanceOfClass {
     public static void main(String[] args) {
         A_ins a = new A_ins();
