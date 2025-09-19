@@ -6,8 +6,6 @@ class ABoxingInWrappr {
         int i = iOb.byteValue();
         System.out.println(i);
 
-        /**
-         * output: -24
-         */
+
     }
 }
