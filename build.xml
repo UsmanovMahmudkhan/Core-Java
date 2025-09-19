@@ -9,7 +9,11 @@
     </target>
 
     <target name="compile" depends="init">
-        <javac srcdir="${src.dir}" destdir="${build.dir}" includeantruntime="false"/>
+        <javac srcdir="${src.dir}" destdir="${build.dir}" includeantruntime="false">
+            <compilerarg value="--enable-preview"/>
+            <compilerarg value="--release"/>
+            <compilerarg value="23"/>
+        </javac>
     </target>
 
     <target name="clean">
