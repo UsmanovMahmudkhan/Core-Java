@@ -26,9 +26,10 @@ class CounterThread {
 
     public synchronized void printEven() {
         while (count <= max) {
-            while (count % 2 != 0) {
+            while (count % 2 != 0 && count <= max) {
                 try { wait(); } catch (InterruptedException e) {}
             }
+            if (count > max) break;
             System.out.println("Even " + count);
             count++;
             notify();
@@ -37,9 +38,10 @@ class CounterThread {
 
     public synchronized void printOdd() {
         while (count <= max) {
-            while (count % 2 == 0) {
+            while (count % 2 == 0 && count <= max ) {
                 try { wait(); } catch (InterruptedException e) {}
             }
+            if (count > max) break;
             System.out.println("Odd " + count);
             count++;
             notify();
