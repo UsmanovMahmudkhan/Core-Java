@@ -11,6 +11,7 @@ public class GenStack {
         System.out.println(Arrays.toString(gen.values));
         System.out.println(Arrays.toString(gen.push(12)));
         System.out.println(Arrays.toString(gen.push(15)));
+        System.out.println(Arrays.toString(gen.pop()));
     }
 }
 
@@ -34,6 +35,20 @@ class GenericStack<T>{
 
         return values;
     }
+
+    public T[] pop(){
+        T[] arr= (T[]) new Object[values.length-1];
+        for(int i=0;i< arr.length;i++){
+            arr[i]=values[i+1];
+        }
+        values=arr;
+        return values;
+    }
+
+    public T peek(){
+        return values[0];
+    }
+
 
 
 
