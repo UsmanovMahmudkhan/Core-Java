@@ -21,7 +21,30 @@ public class Lambda {
         };
 
         System.out.println(factorial.fact(5));
+
+
+        GenInter<String>myGenInter=(name)->{
+            String result="";
+            for(int i=name.length()-1;i>=0;i--){
+                result+=name.charAt(i);
+            }
+            return result;
+        };
+
+        GenInter<Integer>myint=(number)->{
+            int res=1;
+            for(int i=2;i<=number;i++){
+                res*=i;
+            }
+
+            return res;
+        };
+
+        System.out.println(myGenInter.doOperations("khan"));
+        System.out.println(myint.doOperations(12));
     }
+
+
 }
 
 interface StringReverse{
@@ -30,4 +53,8 @@ interface StringReverse{
 
 interface Factorial{
     int fact(int number);
+}
+
+interface GenInter<T>{
+    T doOperations(T get);
 }
