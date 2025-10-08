@@ -12,9 +12,22 @@ public class Lambda {
 
         System.out.println(reverse.reverse("Salom"));
 
+        Factorial factorial=(number)->{
+          int result=1;
+          for(int i=2;i<=number;i++){
+              result*=i;
+          }
+          return result;
+        };
+
+        System.out.println(factorial.fact(5));
     }
 }
 
 interface StringReverse{
     String reverse(String input);
+}
+
+interface Factorial{
+    int fact(int number);
 }
