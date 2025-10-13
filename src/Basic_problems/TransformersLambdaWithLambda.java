@@ -28,6 +28,7 @@ public class TransformersLambdaWithLambda {
             };
 
             System.out.println(conIntString.<String>get(new Integer[]{1, 2, 3, 4, 5, 6, 7}));
+        System.out.println(conIntString.getClass());
         }
     }
 
