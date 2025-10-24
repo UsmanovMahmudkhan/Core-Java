@@ -2,7 +2,7 @@
   <profile version="1.0">
     <option name="myName" value="Project Default" />
     <inspection_tool class="JavadocDeclaration" enabled="true" level="WARNING" enabled_by_default="true">
-      <option name="ADDITIONAL_TAGS" value="creator,exercise,task1,task2,task3,task4,task5" />
+      <option name="ADDITIONAL_TAGS" value="creator,exercise,task1,task2,task3,task4,task5,Todo" />
     </inspection_tool>
   </profile>
 </component>
