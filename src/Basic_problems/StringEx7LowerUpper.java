@@ -10,19 +10,32 @@ public class StringEx7LowerUpper {
         System.out.println("plz enter an string: ");
         String input = in.readLine();
 
-        Map<Character, Character> alp = new HashMap<>();
+        Map<Character, Character> alpUpper = new HashMap<>();
         for (char i = 'a', j = 'A'; i <= 'z'; i++, j++) {
-            alp.put(i, j);
-            alp.put(j, i);
+            alpUpper.put(i, j);
         }
 
-        StringBuilder result = new StringBuilder();
+        Map<Character, Character> alpLower = new HashMap<>();
+        for (char i = 'a', j = 'A'; i <= 'z'; i++, j++) {
+            alpLower.put(j, i);
+        }
+
+        StringBuilder upper = new StringBuilder();
+
         for (int k = 0; k < input.length(); k++) {
             char c = input.charAt(k);
-            if (alp.containsKey(c)) result.append(alp.get(c));
-            else result.append(c);
+            if (alpUpper.containsKey(c)) upper.append(alpUpper.get(c));
+            else upper.append(c);
         }
 
-        System.out.println(result.toString());
+        StringBuilder lower = new StringBuilder();
+        for (int k = 0; k < input.length(); k++) {
+            char c = input.charAt(k);
+            if (alpLower.containsKey(c)) lower.append(alpLower.get(c));
+            else lower.append(c);
+        }
+
+        System.out.println("Upper: "+upper);
+        System.out.println("Lower: "+lower);
     }
 }
