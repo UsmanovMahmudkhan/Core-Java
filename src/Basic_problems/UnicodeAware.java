@@ -11,11 +11,15 @@ public class UnicodeAware {
             alf.add(c);
         }
 
+        System.out.println(alf);
+
         ArrayList<Character> russianAlf = new ArrayList<>();
         for (char c = 'а'; c <= 'я'; c++) {
             russianAlf.add(c);
         }
         russianAlf.add('ё');
+
+        System.out.println(russianAlf);
 
         for (int i = 0; i < input.length(); i++) {
             char origChar = input.charAt(i);
