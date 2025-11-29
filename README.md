@@ -520,3 +520,12 @@ The root-level **Main.java** ties together demos from various packages to run en
 - It provides a predictable, small dataset for exercises without needing external dependencies.
 
 Together, these support interactive exploration of the repository’s many Java learning exercises.
+
+## Author
+
+**Mahmudkhan Usmanov**
+Owner & Maintainer of the *Core-Java* repository
+Student at Sejong University, Department of Computer Science
+
+If you have questions, suggestions, or want to contribute, feel free to open an issue or reach out.
+
